@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>야너두!파이썬 게임</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>야너두! 파이썬 게임</h1>
+
+        <!-- 문제 제시 부분 -->
+        <div class="problem">
+            <h2>문제 코드</h2>
+            <pre id="python-code">
+print("Hello, World!")
+print(2 + 3)
+            </pre>
+        </div>
+
+        <!-- 학생 답안 입력 -->
+        <div class="answer-section">
+            <h2>당신의 예상 출력</h2>
+            <textarea id="student-answer" placeholder="예상 결과를 입력하세요..."></textarea>
+        </div>
+
+        <!-- 확인 버튼 -->
+        <button id="check-answer">정답 확인</button>
+
+        <!-- 결과 출력 -->
+        <div class="result">
+            <h2>결과</h2>
+            <p id="result-message">정답을 입력 후 버튼을 클릭하세요.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

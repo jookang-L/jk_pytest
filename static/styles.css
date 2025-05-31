@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* 한화이글스 테마 색상 */
+:root {
+    --primary-color: #f36f21; /* 한화이글스 주황색 */
+    --secondary-color: #000000; /* 검정색 */
+    --background-color: #fff8f0; /* 밝은 배경색 */
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.problem pre {
+    background-color: #2d2d2d; /* 어두운 코드 배경 */
+    color: #f8f8f2; /* 밝은 코드 폰트 색상 */
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace; /* monospace 기본 폰트 */
+    white-space: pre-wrap;
+}
+
+textarea#student-answer {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: monospace; /* monospace 기본 폰트 */
+    font-size: 14px;
+    resize: vertical;
+}
+
+button#check-answer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button#check-answer:hover {
+    background-color: #d85b14; /* 한화이글스 주황색 약간 어둡게 */
+}
+
+.result p {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ffe6cc; /* 결과창 배경색 (연한 주황) */
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+}
